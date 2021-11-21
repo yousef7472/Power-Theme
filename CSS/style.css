@@ -1,0 +1,259 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif, Helvetica, arial;
+}
+/*           start nav                */
+nav {
+    display: flex;
+    width: 70%;
+    margin: 3% auto auto;
+    top: 1px;
+    padding: 12px 10px;
+    box-shadow: 5px 5px 20px grey;
+    background: white;
+    position: sticky;
+    z-index: 999;
+}
+nav h2, a {
+    color: rgb(37, 170, 223);
+}
+nav .quick-links {
+    margin: auto;
+    margin-right: 0px;
+}
+nav .quick-links a {
+    padding: 25px;
+}
+nav .quick-links a:hover {
+    color: white;
+    background: rgb(204, 77, 77);
+}
+nav .quick-links a:first-of-type {
+    color: white;
+    background: rgb(204, 77, 77);
+}
+nav a {
+    text-decoration: none;
+}
+
+/*                      end nav                 */
+
+/*                      start  header               */
+header .background {
+    background-image: url(../imgs/gettyimages-183346577-2048x2048.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -12%;
+    min-height: 850px;
+    display: flex;
+    filter: brightness(0.8);
+}
+header .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-top: -25%;
+    letter-spacing: 4px;
+}
+header .content h1 {
+    color: white;
+    font-size: 35px;
+}
+header .content p {
+    color: white;
+}
+header .content .links {
+    display: flex;
+    flex-direction: row;
+}
+header .content .links a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    padding: 12px 40px;
+    margin: 15px 25px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.473);
+    letter-spacing: 0px;
+}
+header .content .links a:hover {
+    filter: brightness(.9);
+}
+header .content .links a:first-of-type {
+    background: rgb(37, 170, 223);
+}
+header .content .links a:last-of-type {
+    background: rgb(204, 77, 77);
+}
+/*                      End Header            */
+
+/*                      Start Information section         */
+
+.information .head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 12%;
+    padding: 80px;
+    background: rgb(37, 170, 223);
+    color: white;
+}
+.information .head a {
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 8px 18px;
+} 
+.information .head a:hover {
+    background: white;
+    color: rgb(37, 170, 223);
+}
+.information .some-detailes {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.information .some-detailes .background {
+    background-image: url(../imgs/pexels-jaymantri-4827.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 300px;
+    margin-top: -30%;
+}
+.information .some-detailes .Responsive, .HTML, .mobile {
+    position: relative;
+}
+.information .some-detailes .mobile .content, .Responsive .content, .HTML .content {
+    top: 90px;
+    position: relative;
+}
+.information .some-detailes .mobile .background::before {
+    content: "";
+    background-color: rgb(255 0 0);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+    z-index: 9;
+}
+.information .some-detailes .HTML .background::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+    z-index: 9;
+}
+.information .some-detailes .Responsive .background::before {
+    content: "";
+    background-color: rgb(37, 170, 223);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+    z-index: 9;
+}
+
+.information .some-detailes h3, .some-detailes p, .fas.fa-pencil-alt, .fas.fa-code, .fas.fa-mobile-alt {
+    color: white;
+    position: relative;
+    z-index: 99;
+    margin: 10px;
+}
+.information .some-detailes p {
+    padding: 20px;
+}
+.information .some-detailes .fas.fa-pencil-alt, .fas.fa-code, .fas.fa-mobile-alt {
+    font-size: 55px;
+}
+
+/*                      End Information section         */
+/*                   Start what we can do section */
+
+.what-we-can {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+    margin: 30px;
+}
+.what-we-can .intro {
+    width: 50%;
+    margin: auto;
+    font-weight: 100;
+}
+.what-we-can .intro h3 {
+    font-size: 30px;
+}
+.what-we-can .icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 70%;
+    margin: 30px auto;
+}
+.what-we-can .icons div {
+    background-color: #EEE;
+    padding: 20px;
+    cursor: context-menu;
+    border-radius: 10%;
+}
+.what-we-can .icons .fas, .icons .far {
+    font-size: 35px;
+}
+.what-we-can .icons div:hover {
+    background-color: rgb(204, 77, 77);
+}
+.what-we-can .icons div:hover, .fas div:hover, .far div:hover p {
+    color: white;
+}
+.what-we-can .details {
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
+}
+.what-we-can .details .text {
+    text-align: left;
+}
+.what-we-can .details .text a {
+    text-decoration: none;
+    background-color: rgb(37, 170, 223);
+    color: white;
+    padding: 10px 30px;
+}
+.what-we-can .details .img img {
+    width: 100%;
+}
+/*                   End what we can do section one */
+
+/*                   Start what we can do slider      */
+
+.slider {
+    background: #303030;
+    text-align: center;
+}
+.slider .text {
+    color: white;
+    padding: 50px;
+}
+.slider .text p {
+    width: 55%;
+    margin: 20px auto;
+}
+
+
+/*                   End what we can do slider */
