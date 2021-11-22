@@ -10,12 +10,12 @@ body {
 nav {
     display: flex;
     width: 70%;
-    margin: 3% auto auto;
     top: 1px;
-    padding: 12px 10px;
+    padding: 12px 0px 10px 12px;
     box-shadow: 5px 5px 20px grey;
     background: white;
-    position: sticky;
+    position: fixed;
+    transform: translate(22%);
     z-index: 999;
 }
 nav h2, a {
@@ -26,15 +26,21 @@ nav .quick-links {
     margin-right: 0px;
 }
 nav .quick-links a {
-    padding: 25px;
+    padding: 23px;
 }
+
 nav .quick-links a:hover {
     color: white;
     background: rgb(204, 77, 77);
-}
-nav .quick-links a:first-of-type {
+} 
+
+nav .quick-links a:focus {
     color: white;
     background: rgb(204, 77, 77);
+} 
+ 
+ nav .quick-links a:first-of-type {
+    margin-right: -5px;
 }
 nav a {
     text-decoration: none;
@@ -48,7 +54,6 @@ header .background {
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    margin-top: -12%;
     min-height: 850px;
     display: flex;
     filter: brightness(0.8);
